@@ -1,0 +1,29 @@
+.contact form .form-control {
+	display: inline-block;
+	width: 75%;
+	}
+
+.contact form .form-check {
+	font-size: 14px;
+	}
+
+#contact_form span {
+	color: red;
+	font-size: 10px;
+}
+
+#contact_form label {
+	font-size: 14px;
+	}
+
+#contact_form legend {
+	font-size: 18px;
+	}
+
+#contact {
+	padding: 8em 0;
+}
+
+/* .js .animate-box {
+		opacity: 1;
+} */
