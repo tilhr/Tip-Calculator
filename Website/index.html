@@ -44,6 +44,7 @@
 	<link rel="stylesheet" href="css/simple-line-icons.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/custom.css">
 	<script src="js/modernizr-2.6.2.min.js"></script>
 	</head>
 	<body>
@@ -121,25 +122,44 @@
 						</div>
 					</div>
 				</div>
-	      		<div class="row">
-	      			<div class="col-md-12 text-center animate-box">
-	      				<div class="pricing__item">
-		                    <h3 class="pricing__title">Tip Calculator Widget (.js)</h3>
+				<div class="row">
+					<div class="col-md-12 text-center animate-box">
 
-		                    <div class="icon animate-box"><span class="icon-power"></span></div>
-		                    <ul class="pricing__feature-list">
-		                    	<li class="pricing__feature">bill total: $100</li>
-		                        <br>
-		                        <li class="pricing__feature">tip percentage: 10%</li>
-		                        <br>		                        
-		                        <a href="#explore" class="btn btn-primary btn-lg"><i class="icon-energy"></i> Calculate</a>
-		                        <br><br>
-		                        <li class="pricing__feature"><b>Calculated Tip: $10.00</b></li>
-		                    </ul>
-		                    <h4 class="demo animate-box"><b>[Unfinished]</b></h4>
-		                </div>
-	      			</div>
-	      		</div>
+						<form id="tip_amount_form" name="tip_amount_form" action="index.html" method="get">
+							<div class="form-group">
+								<label for="bill">Bill Amount:</label>
+								<input type="text" name="bill" id="bill" placeholder="Enter Your Bill Amount" class="form-control" />
+								<span id="bill_error">&nbsp;</span>
+							</div>
+							<div class="form-group">
+								<label for="tip_percentage">Tip Percentage:</label>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="tip_percentage" id="ten_percent" value=".10"> 10%
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="tip_percentage" id="fifteen_percent" value=".15" checked> 15%
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="tip_percentage" id="eighteen_percent" value=".18"> 18%
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="tip_percentage" id="twenty_percent" value=".20"> 20%
+								</div>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="tip_percentage" id="twentyfive_percent" value=".25"> 25%
+								</div>
+								<span id="percent_error">&nbsp;</span>
+							</div>
+							<div class="form-group">
+								<label for="tip_amount">Amount to Tip:</label>
+								<input type="text" id="tip_amount" disabled placeholder="Tip" class="form-control" />
+							</div>
+							<div class="form-group">
+								<input type="button" id="calculate" value="Calculate">
+							</div>
+						</form>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -181,5 +201,6 @@
 	<script src="js/jquery.stellar.min.js"></script>
 	<script src="js/jquery.countTo.js"></script>
 	<script src="js/main.js"></script>
+	<script src="js/tip_calculator.js"></script>
 	</body>
 </html>

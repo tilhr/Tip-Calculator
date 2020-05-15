@@ -1,22 +1,22 @@
-.contact form .form-control {
+#contact_form .form-control, #tip_amount_form .form-control {
 	display: inline-block;
 	width: 75%;
 	}
 
-.contact form .form-check {
+#contact_form .form-check, #tip_amount_form .form-check {
 	font-size: 14px;
 	}
 
-#contact_form span {
+#contact_form span, #tip_amount_form span {
 	color: red;
 	font-size: 10px;
 }
 
-#contact_form label {
+#contact_form label, #tip_amount_form label {
 	font-size: 14px;
 	}
 
-#contact_form legend {
+#contact_form legend, #tip_amount_form legend {
 	font-size: 18px;
 	}
 
